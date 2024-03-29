@@ -18,7 +18,7 @@
 </div>
 
 <div class="fishka2">
-    <h1>ЕЩЕ Супер важная фишка</h1>
+    <h1>ТУТ нет стекла</h1>
 </div>
 
 <div class="range">
@@ -83,13 +83,41 @@
         left: 50%;
         top: 20%;
         transform: translate(-50%);
+        border: 10px solid transparent;
         border-radius: 20px;
+        background-color: #75747466;
+        /*
+        border-image: linear-gradient(to right, #f00, #0f0) round;
+        border-image-slice: 1;
+        */
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         color: beige;
-}
+        backdrop-filter: blur(10px);
+        --webkit-backdrop-filter: blur(10px);
+    }
+
+
+    .fishka::before{
+        content: "";
+        position: absolute;
+        height: 266px;
+        width: 494px;
+        border-radius: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        mask: linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        background: linear-gradient(to right, rgba(247, 246, 246, 0.863), rgba(212, 212, 212, 0.164)) border-box;
+        border: 4px solid transparent;
+    }
+
+
 
     .fishka2{
         height: 250px;
