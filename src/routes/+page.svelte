@@ -41,7 +41,7 @@
     }
 
     .blur{
-        background-color: #040A0859;
+        background-color: #24018323;
         width: 50vw;
         height: 100vh;
         position: fixed;
@@ -77,7 +77,7 @@
 
     .fishka{
         height: 250px;
-        width: 484px;
+        width: 482px;
         background-color: #75747466;
         position: absolute;
         left: 50%;
@@ -85,7 +85,7 @@
         transform: translate(-50%);
         border: 10px solid transparent;
         border-radius: 20px;
-        background-color: #75747466;
+        background-color: #d3d3d366;
         /*
         border-image: linear-gradient(to right, #f00, #0f0) round;
         border-image-slice: 1;
@@ -113,10 +113,9 @@
      linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
-        background: linear-gradient(to right, rgba(247, 246, 246, 0.863), rgba(212, 212, 212, 0.164)) border-box;
+        background: linear-gradient(to left, rgba(151, 23, 0, 0.7), rgba(255, 255, 255, 0.164)) border-box;
         border: 4px solid transparent;
     }
-
 
 
     .fishka2{
